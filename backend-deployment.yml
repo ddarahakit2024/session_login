@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: container
-          image: ddarahakit2024/backend:1.0
+          image: ddarahakit2024/backend:latest
           ports:
             - containerPort: 8080
       terminationGracePeriodSeconds: 5
