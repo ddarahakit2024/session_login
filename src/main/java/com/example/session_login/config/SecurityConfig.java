@@ -26,7 +26,7 @@ public class SecurityConfig {
 
         http.authorizeRequests()
                 .antMatchers("/user/signup", "/", "/login").permitAll()
-                .antMatchers( "/ip-info").hasRole("ADMIN")
+                .antMatchers( "/ip-info").permitAll()
                 .antMatchers("/home").authenticated()
                 .anyRequest().authenticated();
 
